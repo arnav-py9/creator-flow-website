@@ -1005,22 +1005,44 @@ nav a:hover {
   }
 
   .hero {
-    padding-top: 120px;
-    padding-bottom: 40px;
-    min-height: auto;
+    padding-top: 130px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* Center and lower the glow intensity for mobile to encompass the button area */
+    background: radial-gradient(circle at 50% 70%, rgba(37, 99, 235, 0.2) 0%, transparent 75%),
+      #000000;
+    position: relative;
+  }
+
+  /* Resize and shift the animated background grid lower for mobile */
+  .hero::before {
+    top: 80px;
+    height: calc(100% - 80px);
+    background-size: 40px 40px, 40px 40px, 400% 400%;
+  }
+
+  .hero-content {
+    width: 100%;
+    position: relative;
+    z-index: 2;
   }
 
   .hero-content h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 10vw, 4rem);
   }
 
   .hero-tag {
-    margin: 2.5rem 0;
-    letter-spacing: 0.3em;
+    margin: 2rem 0;
+    letter-spacing: 0.25em;
+    font-size: 0.8rem;
   }
 
   .hero-btns {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    /* Clear bottom margin to keep on one screen */
   }
 
   .header .btn-primary {
