@@ -1049,9 +1049,14 @@ nav a:hover {
     /* Clear bottom margin to keep on one screen */
   }
 
+  .header {
+    padding: 0.75rem 4%;
+  }
+
   .header .btn-primary {
-    padding: 0.6rem 1rem;
-    font-size: 0.7rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.58rem;
+    margin-left: auto;
   }
 
   .capabilities-header {
