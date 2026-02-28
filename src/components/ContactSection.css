@@ -222,7 +222,8 @@
 @media (max-width: 968px) {
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 3rem;
+        margin-top: 2rem;
     }
 
     .contact-form-container {
@@ -231,6 +232,86 @@
 
     .form-row {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section.full-page {
+        padding-top: 100px;
+        padding-bottom: 40px;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-header-simple {
+        margin-bottom: 2rem;
+    }
+
+    .section-header-simple h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-grid {
+        margin-top: 1rem;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        gap: 1.5rem;
+    }
+
+    .info-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .info-text h4 {
+        font-size: 0.75rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .info-text a {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .availability-card {
+        padding: 1rem;
+        margin-top: 0;
+    }
+
+    .contact-form-container {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .contact-form {
+        gap: 1.25rem;
+    }
+
+    .form-group {
+        gap: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .form-group textarea {
+        height: 100px;
+    }
+
+    .btn-primary.w-full {
+        padding: 0.85rem;
+        font-size: 0.8rem;
     }
 }
 
